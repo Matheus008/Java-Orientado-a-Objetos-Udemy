@@ -1,0 +1,29 @@
+package apicacao;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Matrizees {
+
+	public static void main(String[] args) {
+
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Digite a quandidade de colunas");
+		int coluna = sc.nextInt();
+		System.out.println("Digite a quandidade de linhas");
+		int linha = sc.nextInt();
+		int [][] mattriz = new int[coluna][linha];
+		
+		for(int i=0;i<mattriz.length; i++) {
+			for(int j=0;mattriz[i].length;j++) {
+				
+			}
+		}
+		
+		
+		sc.close();
+	}
+
+}

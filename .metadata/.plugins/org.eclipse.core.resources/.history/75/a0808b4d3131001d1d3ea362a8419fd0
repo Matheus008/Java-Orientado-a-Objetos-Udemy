@@ -1,0 +1,57 @@
+package apicacao;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Matrizees {
+
+	public static void main(String[] args) {
+
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		int cima = 0;
+		int baixo = 0;
+		int esquerda = 0;
+		int direita = 0;
+		
+		System.out.print("Digite a quandidade de linhas: ");
+		int linha = sc.nextInt();
+		System.out.print("Digite a quandidade de colunas: ");
+		int coluna = sc.nextInt();
+		int [][] matriz = new int[coluna][linha];
+		
+		for(int i=0;i<matriz.length; i++) {
+			for(int j=0;j<matriz[i].length;j++) {
+				matriz[i][j] = sc.nextInt();
+			}
+		}
+		
+		System.out.print("Número que você deseja procurar: ");
+		int num = sc.nextInt();
+		
+		for(int i=0;i<matriz.length; i++) {
+			for(int j=0;j<matriz[i].length;j++) {
+				if(matriz[i][j] == num) {
+					System.out.println("Posição "+i+","+j);
+					if( j == 0) {
+						 direita = j + 1;
+						 System.out.print("Direita: "+matriz[i][direita]);
+					}else if(i == linha) {
+						 esquerda = j - 1;
+						 System.out.println("Esquerda: "+matriz[i][esquerda]);
+					}else {
+						 esquerda = j - 1;
+						 direita = j + 1;
+					}
+					
+					
+					
+				}
+			}
+		}
+		
+		sc.close();
+	}
+
+}

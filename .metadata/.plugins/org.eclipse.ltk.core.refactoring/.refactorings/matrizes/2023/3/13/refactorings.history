@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;apicacao&apos; to &apos;aplicacao&apos;&#x0D;&#x0A;- Original project: &apos;matrizes&apos;&#x0D;&#x0A;- Original element: &apos;matrizes/src/apicacao&apos;&#x0D;&#x0A;- Renamed element: &apos;matrizes/src/aplicacao&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;apicacao&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;apicacao" name="aplicacao" qualified="false" references="true" stamp="1680208296375" textual="false" version="1.0"/>
+</session>
